@@ -1,0 +1,51 @@
+/* Apartado con el Header*/
+*{
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    overflow-x: hidden;
+}
+/*Parte principal*/
+main {
+    z-index: 10;
+    position: fixed;
+    position: relative;
+    display: inline-block;
+    background-color: rgb(158, 81, 81);
+    align-items: center;
+    width: 100%;
+    padding: 35vh 15vw;
+    background-color: aquamarine;
+
+}
+
+#fieldRecord {
+    background-color: aqua;
+    position: relative;
+    display: block;
+    display: flex;
+    flex-direction: column;
+    legend {
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 3vw;
+    }
+    }
+.formHead{
+    width: 100%;
+    background-color: bisque;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    margin-left: 35%;
+}
+.formInput{
+    width: 40%;
+    height: 10%;
+    background-color: bisque;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    margin-left: 30%;
+}

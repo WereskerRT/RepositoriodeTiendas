@@ -1,0 +1,120 @@
+/* Apartado con el Header*/
+*{
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    overflow-x: hidden;
+}
+
+/*Parte principal*/
+
+
+main {
+    z-index: 50;
+    align-items: center;
+    width: 100%;
+    background-color: white;
+}
+
+.cajadeslizante {
+    z-index: 5;
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    max-width: 90vw;
+    position: fixed;
+    bottom: 20%;
+    top: 1vw;
+    left: 0;
+    padding: 1.5rem 0;
+}
+
+.deslizante {
+    z-index: 1;
+        display: flex;
+        width: fit-content;
+        animation-name: moverse;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+        animation-direction: var(--direction);
+        animation-duration: var(--duration);
+}
+
+.etiqueta {
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    background-color: rgb(147, 215, 236);
+    margin: 10px;
+    box-shadow: 5px 5px 5px black;
+    img{
+        z-index: 1;
+        width: 250px;
+        height: 300px;
+        padding: 15px;
+    }
+}
+
+@keyframes moverse {
+    0% {transform: translateX(0);}
+    100%{ transform: translateX(-50%);}
+    
+}
+
+
+.deslizante-inver {
+        z-index: 2;
+        display: flex;
+        width: fit-content;
+        animation-name: moverse;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+        animation-direction: var(--direction);
+        animation-duration: var(--duration);
+}
+
+.etiqueta-inver {
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    background-color: rgb(147, 215, 236);
+    margin: 10px;
+    box-shadow: 5px 5px 5px black;
+    img{
+        z-index: 1;
+        width: 250px;
+        height: 300px;
+        padding: 15px;
+    }
+}
+main #boxSearch {
+    z-index: 10;
+    position: fixed;
+    position: relative;
+    display: inline-block;
+    background-color:rgb(0, 188, 230);
+    align-items: center;
+    width: 45%;
+    margin: 30vh 29vw 5vh;
+
+}
+
+#centerSearch{
+    margin: 13%;
+    align-items: center;
+    align-items: center;
+}
+
+#logoFront {
+    padding: 50% auto;
+    width: 100%;
+    height: auto
+}
+
+
+#searchBar {
+    padding: 80% auto;
+    width: 90%;
+}
