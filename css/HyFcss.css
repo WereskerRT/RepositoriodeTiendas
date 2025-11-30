@@ -1,0 +1,118 @@
+
+header{
+    z-index: 13;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    background-color: rgb(0, 188, 230);
+    height: 15%;
+    width: 100%;
+    align-items:center;
+    flex: content;
+    position: fixed;
+    top: 0vw;
+}
+
+
+.superiorBar {
+    position: static;
+    width: 30%;
+    height: 10%;
+    right: 0;
+    display: flex; 
+    align-items: center;
+    background-color: rgb(0, 188, 230);
+    flex: content;
+    align-content: center;
+
+}
+
+#logoBar {
+    width: 20%;
+    height: auto;
+}
+
+#accountChange {
+    border: 3px solid black;
+    background-color: rgb(147, 215, 236);
+    border-radius: 5px;
+    margin-left: auto;
+    width: 20%;
+    text-align: center;
+}
+
+#accountPicContainer {
+    width: 10%;
+}
+
+#userPic {
+    margin-right: 0%;
+    width: 70%;
+    height: auto;
+}
+
+/*Barra de Navegación*/
+
+nav button{
+    padding: 20px 25px;
+    border: none;
+    color: yellowgreen;
+    background-color: lightblue;
+}
+
+nav .elements{
+    display: block;
+    color: black;
+    text-decoration: none;
+    padding: 20px 25px;
+    background-color: grey;
+}
+nav #menuDisplayed {
+    position: absolute;
+    display: none;
+}
+
+nav:hover #menuDisplayed {
+    display: block;
+    border: 3px solid red;
+    box-shadow: 3px 3px 10px black;
+}
+
+#menuDisplayed .elements:hover{
+
+    color: white;
+
+}
+
+/* pie de página*/
+
+footer {
+    z-index: 13;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(0, 188, 230);
+    position: fixed;
+    bottom: 0;
+}
+
+#infoLinks{
+    display: flex;
+    align-items: flex-end;
+}
+#infoLinks a{
+    border: 2px solid black;
+    text-align: center;
+    padding: 10px;
+    margin: 5px;
+
+}
+#mediaSocialContainer{
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+}
+
+#mediaSocialContainer img {
+    width: 10vw;
+    height: 10vh;
+}
